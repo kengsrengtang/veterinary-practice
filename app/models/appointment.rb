@@ -1,4 +1,6 @@
 class Appointment < ActiveRecord::Base
+  belongs_to :doctor
+
   validates :customer, presence: true
   validates :pet, presence: true
   validates :reason_for_visit, presence: true
