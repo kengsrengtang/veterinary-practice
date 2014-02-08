@@ -1,5 +1,6 @@
 class Doctor < ActiveRecord::Base
   has_many :appointments, dependent: :destroy
+  has_many :visits, dependent: :destroy
 
   validates :name, length: {maximum: 35}, presence: true
   validates :zip, length: {maximum: 5}
