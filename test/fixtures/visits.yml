@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  doctor_id: 1
+  pet_name: MyString
+  pet_type: MyString
+  breed: MyText
+  age: 1
+  weight: 1.5
+  last_visit: 2014-02-08
+
+two:
+  doctor_id: 1
+  pet_name: MyString
+  pet_type: MyString
+  breed: MyText
+  age: 1
+  weight: 1.5
+  last_visit: 2014-02-08

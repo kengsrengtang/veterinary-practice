@@ -1,4 +1,6 @@
 VeterinaryPractice::Application.routes.draw do
+  resources :visits
+
   resources :appointments
 
   resources :doctors

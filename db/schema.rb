@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140208193709) do
+ActiveRecord::Schema.define(version: 20140208195046) do
 
   create_table "appointments", force: true do |t|
     t.integer  "doctor_id"
@@ -32,6 +32,18 @@ ActiveRecord::Schema.define(version: 20140208193709) do
     t.integer  "zip"
     t.string   "school_received_degree"
     t.integer  "years_in_practice"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "visits", force: true do |t|
+    t.integer  "doctor_id"
+    t.string   "pet_name"
+    t.string   "pet_type"
+    t.text     "breed"
+    t.integer  "age"
+    t.float    "weight"
+    t.date     "last_visit"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
