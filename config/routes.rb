@@ -59,4 +59,5 @@ VeterinaryPractice::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  get '/', to: 'appointments#index'
 end
